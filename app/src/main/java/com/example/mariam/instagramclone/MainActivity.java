@@ -56,9 +56,11 @@ public class MainActivity extends AppCompatActivity {
                             Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
                             startActivity(intent);
 
+
                         } else{
                             FancyToast.makeText(MainActivity.this, e.getMessage(),
                                     FancyToast.LENGTH_LONG, FancyToast.ERROR, true).show();
+
                         }
                     }
                 });
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+// بيخلى الابلكيشن full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     }

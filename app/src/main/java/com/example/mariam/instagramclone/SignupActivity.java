@@ -71,6 +71,7 @@ public class SignupActivity extends AppCompatActivity {
                     appUser.setUsername(edtUsername.getText().toString());
                     appUser.setPassword(edtPasswordSignup.getText().toString());
 
+                    // بيبين processing لل signUp
                     final ProgressDialog progressDialog = new ProgressDialog(SignupActivity.this);
                     progressDialog.setMessage("Signing up " + edtUsername.getText().toString());
                     progressDialog.show();
